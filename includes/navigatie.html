@@ -1,0 +1,84 @@
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+
+<div id="navigation">
+    
+	<nav class="navbar navbar-default navbar-static-top  navbar-custom">
+  <div class="container-fluid-menu">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" style="margin-right:45%;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FOOD  & NON-FOOD <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="food.php#shop">FOOD</a></li>
+            <li><a href="nonfood.php#shop">NON-FOOD</a></li>
+          </ul>
+        </li>
+
+ <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LANDEN <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Canada.php#shop">Canada</a></li>
+            <li><a href="China.php#shop">China</a></li>
+            <li><a href="Engeland.php#shop">Engeland</a></li>
+            <li><a href="Frankrijk.php#shop">Frankrijk</a></li>
+            <li><a href="India.php#shop">India</a></li>
+            <li><a href="Indonesie.php#shop">Indonesie</a></li>
+            <li><a href="Italie.php#shop">Italië</a></li>
+            <li><a href="Japan.php#shop">Japan</a></li>
+            <li><a href="Mexico.php#shop">Mexico</a></li>
+            <li><a href="Portugal.php#shop">Portugal</a></li>
+            <li><a href="Rusland.php#shop">Rusland</a></li>
+            <li><a href="Spanje.php#shop">Spanje</a></li>
+            <li><a href="VS.php#shop">Verenigde Staten</a></li>           
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRIJS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="prijslaag.php#shop">0 TOT 2 EURO</a></li>
+            <li><a href="prijs2tot5.php#shop">2 TOT 5 EURO</a></li>
+            <li><a href="prijs5tot10.php#shop">5 TOT 10 EURO</a></li>
+            <li><a href="prijs10.php#shop">BOVEN DE 10 EURO</a></li>
+    
+          </ul>
+        </li>
+      </ul>
+      
+
+
+<div class="form-group">
+        <form method="GET" action="search.php#shop" class="navbar-form navbar-right">
+
+          <input id="form" name="id" type="text" placeholder="Producten zoeken" class="form-control" />
+          <a href="#" title="Zoektermen" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="U kunt zoeken op land, beschrijving, naam en merk." class="hidden-xs">
+            <span class="fa fa-question hidden-xs"></span>
+          </a>
+          <button type="submit" class="btn btn-primary">Zoekresultaten tonen</button>
+        </form>
+    </div>
+</div>
+    
+    
+
+  
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -1,0 +1,839 @@
+
+/*----------------------------------------------------- ----------------------------------------------- ---------------------------------------------------------*/
+/*----------------------------------------------------- ---------------- MOBIEL ----------------------- -----------------------------------------------------*/
+/*----------------------------------------------------- ----------------------------------------------- --------------------------------------------------------*/
+
+@media (max--device-width: 480px) {
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+color: #777;
+background-color: #dfdbe5;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+color: #333;
+background-color: #dfdbe5;
+}
+
+.slideshow_container {
+visibility: none;
+}
+}
+
+/*----------------------------------------------------- ----------------------------------------------- ---------------------------------------------------------*/
+/*----------------------------------------------------- ------------ HEADER + CAROUSEL ---------------- -----------------------------------------------*/
+/*----------------------------------------------------- ----------------------------------------------- ---------------------------------------------------------*/
+
+#header {
+height:170px;
+margin-bottom: 10px;
+width:100%;
+background-image:url("http://wallpaperlayer.com/img/2015/6/leaves-background-8425-8748-hd-wallpapers.jpg");
+background-repeat: repeat-x;
+color: white;
+}
+
+#header h1 {
+text-align:left;
+padding:5px;
+margin-bottom:5px;
+margin-right:20px;
+height: 60px;
+}
+
+#header h2 {
+color:#FFF;
+font-size:400%;
+letter-spacing:-2px;
+text-shadow: 1px 1px #888888;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.page-title{
+text-align: center;
+}
+
+/*----------------------------------------------------------------------*/
+/*---------------------------- CAROUSEL --------------------------------*/
+
+
+.slideshow{
+padding-left: -10%;
+padding-left: -10%;
+width: 100%;
+height:400px;
+margin-top:0px;
+}
+
+#links, #rechts {
+padding: 3px;
+}
+
+#links {
+width: 150px;
+}
+
+#rechts {
+width: 250px;
+}
+
+/*----------------------------------------------------- ----------------------------------------------- ---------------------------------------------------------*/
+/*----------------------------------------------------- BODY ATTRIBUTEN (BUTTONS - GLYPHICONS - H1/H6)-  --------------------------------------------------------*/
+/*----------------------------------------------------- ----------------------------------------------- ---------------------------------------------------------*/
+
+* {
+border:0;
+margin:0;
+padding:0;
+}
+
+body {
+background: #e6e9ed;
+background: -webkit-linear-gradient(#e6e9ed, white);
+background: -o-linear-gradient(#e6e9ed, white);
+background: -moz-linear-gradient(#e6e9ed, white);
+background: linear-gradient(#e6e9ed, white);
+color:#555;
+font-size:100%;
+font-family:"PT Sans", sans-serif, Montserrat, Arial, Helvetica, "bitstream vera sans", sans-serif;
+text-align:center;
+overflow-x: hidden;
+}
+
+#menu {
+float: right;
+margin-top: -60px;
+padding: 10px;
+}
+
+#menu a {
+color: #FFF;
+text-decoration:underline;
+}
+
+#content {
+margin: 0 auto;
+padding: 0 0 20px;
+width: 100%;
+overflow: auto;
+}
+
+#content h1 {
+border-bottom:1px solid #999;
+font-size:1.8em;
+padding:20px 0 0;
+}
+
+#content p {
+padding:20px 20px 0;
+}
+/*---------------------------------------------------------------------*/
+/*---------------------------- KNOPPEN --------------------------------*/
+
+.button {
+border: 1px outset;
+background:#8bc92a;
+color: #FFF;
+float: none;
+width:100px;
+}
+
+.button1 {
+border-radius: 4px;
+background-color: #337AB7;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 15px;
+padding: 10px;
+width: 150px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button1 span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button1 span:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button1:hover span {
+padding-right: 25px;
+color:#FFF;
+}
+
+.button1:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+.well {
+margin-top:20px;
+margin-right:10%;
+margin-left:10%;
+background:white;
+}
+
+/*-------------------------------------------------------------------*/
+/*---------------------------- TABEL --------------------------------*/
+
+table, td, th {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+font-size: 1.0em;
+}
+
+table {
+width: 80%;
+margin: 20px;
+border-collapse: collapse;
+text-align: center;
+}
+
+.table {
+margin-left:-2px;
+font-size:14px;
+}
+
+th {
+width:120px;
+text-align:right;
+vertical-align: middle;
+background-color: #eee;
+color:	black;
+height: 20px;
+padding: 5px;
+}
+
+td {
+width: 200px;
+text-align:center;
+height: 25px;
+vertical-align: bottom;
+padding: 5px;
+}
+
+/*------------------------------------------------------------------------*/
+/*---------------------------- TEXTOPMAAK --------------------------------*/
+
+a {
+color:#05bde1;
+text-decoration:none;
+}
+
+a:hover {
+color:#015AB1;
+text-decoration:none;
+}
+
+.textalignleft {
+text-align: left;
+}
+
+h4 {
+font-size:16px;
+-webkit-transition: all 0.3s ease;
+transition:font 1s;
+-moz-transition: all 0.3s ease;
+transition:font 1s;
+-o-transition: all 0.3s ease;
+transition:font 1s;
+-ms-transition: all 0.3s ease;
+transition:font 1s;
+}
+
+h4:hover {
+font-size:17px;
+}
+
+ul {
+list-style-type: none;
+}
+
+/*------------------------------------------------------------------------*/
+/*--------------------------- FORMULIEREN --------------------------------*/
+
+input, select, .input {
+padding: 4px;
+margin: 0 5px;
+font-weight: bold;
+font-size: 0.9em;
+color: #444;
+border:1px inset #111;
+background: #fff;
+}
+
+.errorlist, .error input{
+border: 1px solid red;
+background: #fdd;
+}
+
+.errorlist {
+width: 70%;
+margin: 10px;
+padding: 4px;
+}
+
+.error, .ad {
+font-weight: bold;
+color: #C00;
+}
+
+form.formulier fieldset {
+margin: 20px;
+border: 1px solid #aaa;
+width: 400px;
+}
+
+form.formulier legend {
+padding: 0 2px;
+font-weight: bold;
+}
+
+form.formulier label {
+display: inline-block;
+line-height: 1.8;
+vertical-align: top;
+}
+
+form.formulier fieldset ol {
+margin: 0;
+padding: 0;
+}
+
+form.formulier fieldset li {
+list-style: none;
+padding: 5px;
+margin: 0;
+}
+
+form.formulier em {
+font-weight: bold;
+font-style: normal;
+color: #f00;
+}
+
+form.formulier label {
+width: 120px;
+margin-left: 20px;
+}
+
+/*------------------------------------------------------------------------*/
+/*---------------------------- GLYPHICONS --------------------------------*/
+
+.glyphicon-user {
+font-size: 20px;
+margin-bottom: 2px;
+color:  #05bde1;
+}
+
+.glyphicon {
+font-size: 40px;
+margin-top: 10px;
+}
+
+.glyphicon-search {
+font-size: 20px;
+}
+
+.glyphicon-map-marker, .glyphicon-phone, .glyphicon-shopping-cart{
+font-size:14px;
+}
+
+
+
+.fa-twitter, .fa-facebook{
+font-size: 30;
+}
+
+.fa-question {
+color: #337AB7;
+}
+
+/* --------------------------------------------------------------------- */
+/* ---------------------------- PRODUCTEN  ----------------------------- */
+
+#product {
+padding: 5px;
+margin: 15px;
+width: 250px;
+height:300px;
+border: 1px solid #ddd;
+background:#FFF;
+float: left;
+transition: box-shadow 0.3s;
+-webkit-animation: fadein 1s;
+-moz-animation: fadein 1s;
+-ms-animation: fadein 1s;
+-o-animation: fadein 1s;
+animation: fadein 1s;
+}
+
+#product:hover {
+box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+#prodnummer, #prodnaam, #beschrijving, #prijs {
+padding: 5px;
+margin: 2px 0;
+}
+
+#prodnummer {
+height: 20px;
+width: 20px;
+margin: 0 auto;
+}
+
+#prodnaam {
+font-size: 1.3em;
+font-style:bold;
+text-align: center;
+padding: 10px 0 px 10px 0px;
+}
+
+#prijs {
+float: clear;
+font-size: 1.4em;
+padding: 10px 2px 2px 2px;
+
+}
+
+#voorraad, #leverbaar {
+float: clear;
+width: 100px;
+margin: 1px 0px 0px 65px;
+
+}
+
+#beschrijving {
+padding: 5px;
+text-align: center;
+}
+
+.selecteer {
+padding: 5px;
+background-color: #FFF;
+overflow: auto;
+float:right;
+}
+
+.item {
+display: none;
+position: relative;
+.transition(1s ease-in-out left);
+width: 100%;
+height: 100%;
+}
+
+.item p{
+font-size: 150%;
+}
+
+.grids_of_4{
+margin-left: 2%;
+width:100%;
+}
+
+.grid1_of_4{
+float: left;
+width: 21.333%;
+margin-left: 4.3333%;
+text-align:center;
+}
+
+.grid1_of_4:first-child {
+margin-left: 0;
+}
+
+.grid1_of_4 h4 {
+font-size: 1.8em;
+color: #ffffff;
+}
+
+.image-frame-index{
+height: 60px;
+width: auto;
+max-width: 150px;
+}
+
+.service1-items {
+padding: 0px 0 0px 0;
+float: left;
+position: relative;
+overflow: hidden;
+max-width: 100%;
+height: 321px;
+width: 130px;
+}
+
+.service1-item {
+height: 107px;
+width: 120px;
+display: block;
+float: left;
+position: relative;
+padding-right: 20px;
+border-right: 1px solid #DDD;
+border-top: 1px solid #DDD;
+border-bottom: 1px solid #DDD;
+}
+
+.service1-item > img {
+max-height: 110px;
+max-width: 110px;
+opacity: 0.6;
+transition: all .2s ease-in;
+-o-transition: all .2s ease-in;
+-moz-transition: all .2s ease-in;
+-webkit-transition: all .2s ease-in;
+}
+
+.foto-product-pagina {
+max-width: 240px;
+max-height: 240px;
+width: auto;
+-webkit-animation: fadein 1s;
+-moz-animation: fadein 1s;
+-ms-animation: fadein 1s;
+-o-animation: fadein 1s;
+animation: fadein 1s;
+}
+
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+#product-pagina {
+padding: 5px;
+margin: 0px;
+width: 240px;
+height:120px;
+border: 1px solid #ddd;
+background:#FFF;
+float: left;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- ALLES NAVBAR  ---------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar-nav > li > a {
+vertical-align: middle;
+padding-top:3px !important;
+padding-bottom:3px !important;
+}
+
+.navbar {
+min-height:30px !important;
+}
+
+
+.navbar-collapse {
+padding-left: 0px;
+}
+
+.container-fluid-menu{
+padding-right: 15px;
+padding-left: 2px;
+margin-right: auto;
+margin-left: auto;
+border-radius: 0px;
+}
+
+.navbar-nav.nav-justified > li{
+vertical-align: middle;
+float:none;
+margin:0px 200px 0px 200px;
+}
+
+.navbar-default {
+background-color: #white;
+border-top: 1px solid #777777;
+border-bottom: 1px solid #777777;
+margin-top: 1px;
+padding-left: 20px;
+margin-bottom: 0px;
+border-radius: 0px;
+font-family: "PT Sans", sans-serif;
+font-size:15px;
+}
+
+.navbar-default .navbar-brand {
+color: white;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+color: #05bde1;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: #696969;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+color: #05bde1;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+color: #05bde1;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+color: #000;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li> a:hover,.navbar-default .navbar-nav .open .dropdown-menu {
+color:black;
+background-color: #FFF;
+margin-top: -1px;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+color:black;
+margin-top: -1px;
+background:#e6e9ed;
+}
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+border-top-color: #777;
+border-bottom-color: #777;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+border-top-color: #333;
+border-bottom-color: #333;
+}
+
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+border-top-color: #555;
+border-bottom-color: #555;
+}
+
+.navbar-default .navbar-toggle {
+border-color: #DDD;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+background-color: #DDD;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #CCC;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+border-color: ##888;
+}
+
+.navbar-custom{
+border-top: 1px solid white;
+border-bottom: 1px solid white;
+background: transparent;
+font-color: black;
+vertical-align:bottom;
+}
+
+.navbar-custom .navbar-nav > li > a {
+color: #696969;
+margin-top:20px;
+}
+
+.f_nav {
+margin-top: 0%;
+}
+
+.f_nav li{
+display: block;
+}
+
+.f_nav li a{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 1em;
+color: #fefefe;
+line-height: 1.8em;
+text-transform: capitalize;
+}
+
+.f_nav li a:hover{
+color: #ffffff;
+text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- ALLES FOOTER ----------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+#footer {
+border-top:2px solid #000;
+height:50px;
+margin:0 auto;
+padding:10px;
+text-align:center;
+width:100%;
+}
+
+.footer_bg{
+background: #015AB1;
+width: 100%;
+height:220px;
+margin-bottom:10px;
+}
+
+.footer{
+padding: 5px 20px 5px 20px;
+}
+
+.footer_bg1{
+background: #015AB1;
+width: 100%;
+}
+
+.copy{
+text-align:center;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.copy p{
+font-size: 0.9725em;
+color: #ffffff;
+}
+
+.copy p a{
+color:#fefefe;
+text-decoration: underline;
+}
+
+.copy p a:hover{
+text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------- CONTACT ----------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+.contact{
+margin:2% 0;
+display: block;
+}
+
+.contact h2{
+font-size: 2em;
+color: #777777;
+text-shadow: 0 1px 0 #ffffff;
+}
+
+.contact p{
+padding: 0px;
+margin: 0px;
+font-size: 1.5em;
+color: #777777;
+text-shadow: 0 1px 0 #ffffff;
+}
+
+.map{
+margin: 0px;
+}
+
+.contact-form{
+margin: 0 auto;
+position:relative;
+width: 50%;
+}
+
+.contact-form div{
+padding:2px 0;
+}
+
+.contact-form input[type="text"], .contact-form textarea {
+font-family: 'Montserrat';
+background: #FFFFFF;
+border: 1px solid #E7E7E7;
+color: rgba(85, 81, 81, 0.84);
+padding: 2px;
+display: block;
+width: 75%;
+margin-left: 12.5%;
+outline: none;
+-webkit-appearance: none;
+}
+
+.contact-form textarea{
+resize:none;
+height:120px;
+}
+
+.contact-form input[type="submit"]{
+margin-top:10px;
+font-family: 'Montserrat';
+-webkit-appearance: none;
+cursor:pointer;
+color: #ffffff;
+background: #8BC82B;
+border:none;
+outline:none;
+display: inline-block;
+padding: 2px 2px;
+font-size: 1.2em;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover{
+background: #555555;
+color: #ffffff;
+}
+
+#googleMap {
+width:100%;
+height:380px;
+border: 1px solid black;
+}

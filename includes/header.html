@@ -1,0 +1,129 @@
+<?php session_start(); ?>
+<html lang="NL">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Op Buitenlandseproducten.nl kunt u eenvoudig producten uit het buitenland bestellen. Op zoek naar typische streekproducten? Hier vindt u een groot assortiment aan buitenlandse producten.">
+
+<title><?php echo $page_title; ?></title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/jpg" href="images/blpdlogo2.png">
+<meta charset="UTF-8">
+<script type="text/javascript">
+<!--
+function logOut() {
+	var answer = confirm ('Weet je zeker dat je wilt uitloggen?')
+	if (answer)
+		window.location="logout.php";
+}
+//-->
+</script>
+<link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header">
+<div class="container">
+
+<h1><a href="index.php"><img src="images/blpdlogo.png" alt="logo" height="200%"></a></h1>
+<a href="index.php"><h2 style="margin-top: -60px; margin-right:20px;" class="hidden-xs">Buitenlandse Producten.nl</h2></a>
+
+<?php
+$indexnaam = $_SESSION['Klantnaam'];
+  echo "<ul id='menu'>\n";
+echo "<a href='account.php'><span class='glyphicon glyphicon-user'></span></a>";
+if ($_SESSION['KlantNr'] > 0){
+  echo "<li><h6>"."Welkom,  "."<b>"."<a href=\"account.php\">"."$indexnaam"."</a>"."</b>" ."</h6></li>";
+  echo "<li><h6><a href=\"logout.php\"><b>Klik hier</b></a> om uit te loggen</h6></li>\n";
+}
+	// Toon de inhoud van je winkelwagen en de naam van de gebruiker linksboven in header.
+
+
+	// Een gebruiker is ingelogd wanneer $_SESSION['klantnr'] een waarde heeft (niet leeg is).
+	// Opdracht: vul onderstaande code aan zodat de volgende functionaliteit werkt:
+	// Als een klant niet is ingelogd toon je: "U bent niet ingelogd | login".
+	// Wanneer een gebruiker is ingelogd toon je hier zijn klantnaam uit de sessie. Door op zijn
+	// gebruikersnaam te klikken gaat de klant naar account.php. Je toont dan dus:
+	// "Welkom, [klantnaam] | logout". Voor het uitloggen kun je gebruik maken van logout.php.
+	// Kijk eventueel in de HTML broncode van het werkende voorbeeld hoe dit moet.
+	else{
+  echo "<li><h6>U bent niet ingelogd | <a href=\"login.php\">Login</a></h6></li>\n";
+}
+
+	
+	// Hier tonen we het aantal producten in de winkelwagen, en een link om direct af te rekenen.
+	// Kijk of er iets in de winkelwagen zit
+	if (empty($_SESSION['cart'])) {
+		echo "<li><h6><a href='cart.php'>Winkelwagen</a> is leeg</h6></li>\n";
+	} else {
+		// 'explode' zorgt dat de session - een string - gescheiden wordt op het gegeven teken.
+		// De session bevat de productinformatie, gescheiden per '|'.
+		$cart2 = explode("|",$_SESSION['cart']);
+
+		// Tellen inhoud winkelwagen
+		$count = count($cart2);
+		if ($count == 1) {
+			echo "<li>1 product ";
+		} else {
+			echo "<li>".$count." producten ";
+		}
+		echo "in <a href=\"cart.php\">winkelwagen</a> | <a href=\"checkout.php\">afrekenen</a></li>\n";
+	}
+	echo("</ul>");
+
+	// Hier kijken we of er een actief menu-item is. Zo niet, dan 0.
+	if (!isset($active)) $active = 0;
+?>
+
+
+
+</div>
+</div>
+
+<div id="navigation" style="margin-top:-10px">
+	<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid-menu container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" style="margin-right:0px;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-justified">
+        <li><a href="index.php#shop">SHOP</a></li>
+        <li><a href="overons.php">OVER ONS</a></li>
+        <li><a href="contact.php">CONTACT</a></li>
+
+      </ul>
+
+      <!--
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+  		-->
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<?php
+
+
+?>
+
+
+
+<div id="content">
+<!-- Begin van de pagina-specifieke content. -->
