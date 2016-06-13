@@ -13,7 +13,7 @@ echo '<div class="panel-footer"></div>';
 echo '<h3>Uw gegevens</h3>';
 
 //
-		$conn = mysqli_connect('localhost', 'WebwinkelF4', 'groepf4', 'webwinkel-DB');
+		$conn = mysqli_connect('', '', '', '-DB');
 // check connection
 if (mysqli_connect_errno()) {
 	printf("<p><b>Fout: verbinding met de database mislukt.</b><br/>\n%s</p>\n", mysqli_connect_error());

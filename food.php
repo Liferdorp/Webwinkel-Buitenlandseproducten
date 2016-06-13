@@ -90,10 +90,10 @@ include ('includes/navigatie.html');
 // Stap 1: maak verbinding met MySQL.
 // Zorg ervoor dat MySQL (via XAMPP) gestart is.
 //
-		$DBServer = 'localhost';
-		$DBUser   = 'WebwinkelF4';
-		$DBPass   = 'groepf4';
-		$DBName   = 'webwinkel-DB';
+		$DBServer = '';
+		$DBUser   = '';
+		$DBPass   = '';
+		$DBName   = '-DB';
 
 		error_reporting(E_ERROR | E_PARSE);
 

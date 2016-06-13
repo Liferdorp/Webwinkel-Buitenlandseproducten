@@ -96,10 +96,10 @@ include ('includes/navigatie.html');
 <?php
 
     $product_id = $_GET['id'];
-    $DBServer = 'localhost';
-    $DBUser   = 'WebwinkelF4';
-    $DBPass   = 'groepf4';
-    $DBName   = 'webwinkel-DB';
+    $DBServer = '';
+    $DBUser   = '';
+    $DBPass   = '';
+    $DBName   = '-DB';
 
     $conn = mysql_connect($DBServer, $DBUser, $DBPass);
     mysql_select_db($DBName,$conn);

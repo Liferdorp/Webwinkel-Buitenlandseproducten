@@ -142,7 +142,7 @@ echo "Uw mail is verzonden!";};
 <div id="googleMap"></div>
 
 
-<!---------------------------GOOGLE MAPS SCRIPT + MARKER + JS SCROLL------------------------------------->
+<!---------------------------GOOGLE MAPS SCRIPT + MARKER + JS SCROLL----------------------------------- -->
 
 
 <script src="http://maps.googleapis.com/maps/api/js"></script>

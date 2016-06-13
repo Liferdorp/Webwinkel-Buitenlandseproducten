@@ -26,7 +26,7 @@ if (empty($_SESSION['KlantNr'])) {
 	// Afsluiten van bestelling en bestelregel opslaan in database
 
 	//connectie maken met database webwinkel
-$conn = mysqli_connect('localhost', 'WebwinkelF4', 'groepf4', 'webwinkel-DB');
+$conn = mysqli_connect('', '', '', '-DB');
 	 
 	// check connection
 	if (mysqli_connect_errno()) {
@@ -76,10 +76,10 @@ $conn = mysqli_connect('localhost', 'WebwinkelF4', 'groepf4', 'webwinkel-DB');
 	// Hieronder volgt de factuur.
 	// Eerst wordt connectie gemaakt me de database.
 
-$DBServer = 'localhost';
-$DBUser   = 'WebwinkelF4';
-$DBPass   = 'groepf4';
-$DBName   = 'webwinkel-DB';
+$DBServer = '';
+$DBUser   = '';
+$DBPass   = '';
+$DBName   = '-DB';
 
 error_reporting(E_ERROR | E_PARSE);
 

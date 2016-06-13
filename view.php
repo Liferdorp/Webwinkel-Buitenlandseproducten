@@ -16,10 +16,10 @@ Klik op de naam van een image om het uit de database te halen. Klik <a href="fil
 // als source van de <img> tag.
 //
 
-		$DBServer = 'localhost';
-		$DBUser   = 'WebwinkelF4';
-		$DBPass   = 'groepf4';
-		$DBName   = 'webwinkel-DB';
+		$DBServer = '';
+		$DBUser   = '';
+		$DBPass   = '';
+		$DBName   = '-DB';
 
 		error_reporting(E_ERROR | E_PARSE);
 

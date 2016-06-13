@@ -6,7 +6,7 @@ session_start();
 
 //
 // index.php
-// Dit is het startscherm van de webwinkel.
+// Dit is het startscherm van de .
 //
 
 // Zet het niveau van foutmeldingen zo dat warnings niet getoond worden.
@@ -102,10 +102,10 @@ include ('includes/navigatie.html');
 <?php
 
 
-		$DBServer = 'localhost';
-		$DBUser   = 'WebwinkelF4';
-		$DBPass   = 'groepf4';
-		$DBName   = 'webwinkel-DB';
+		$DBServer = '';
+		$DBUser   = '';
+		$DBPass   = '';
+		$DBName   = '-DB';
 
 		error_reporting(E_ERROR | E_PARSE);
 
@@ -172,10 +172,10 @@ mysqli_close($conn);
 <?php
 
 
-    $DBServer = 'localhost';
-    $DBUser   = 'WebwinkelF4';
-    $DBPass   = 'groepf4';
-    $DBName   = 'webwinkel-DB';
+    $DBServer = '';
+    $DBUser   = '';
+    $DBPass   = '';
+    $DBName   = '-DB';
 
     error_reporting(E_ERROR | E_PARSE);
 
@@ -243,10 +243,10 @@ mysqli_close($conn);
 <?php
 
 
-    $DBServer = 'localhost';
-    $DBUser   = 'WebwinkelF4';
-    $DBPass   = 'groepf4';
-    $DBName   = 'webwinkel-DB';
+    $DBServer = '';
+    $DBUser   = '';
+    $DBPass   = '';
+    $DBName   = '-DB';
 
     error_reporting(E_ERROR | E_PARSE);
 
@@ -314,10 +314,10 @@ mysqli_close($conn);
 <?php
 
 
-    $DBServer = 'localhost';
-    $DBUser   = 'WebwinkelF4';
-    $DBPass   = 'groepf4';
-    $DBName   = 'webwinkel-DB';
+    $DBServer = '';
+    $DBUser   = '';
+    $DBPass   = '';
+    $DBName   = '-DB';
 
     error_reporting(E_ERROR | E_PARSE);
 
@@ -386,10 +386,10 @@ mysqli_close($conn);
 <?php
 
 
-    $DBServer = 'localhost';
-    $DBUser   = 'WebwinkelF4';
-    $DBPass   = 'groepf4';
-    $DBName   = 'webwinkel-DB';
+    $DBServer = '';
+    $DBUser   = '';
+    $DBPass   = '';
+    $DBName   = '-DB';
 
     error_reporting(E_ERROR | E_PARSE);
 
@@ -458,10 +458,10 @@ mysqli_close($conn);
 <?php
 
 
-    $DBServer = 'localhost';
-    $DBUser   = 'WebwinkelF4';
-    $DBPass   = 'groepf4';
-    $DBName   = 'webwinkel-DB';
+    $DBServer = '';
+    $DBUser   = '';
+    $DBPass   = '';
+    $DBName   = '-DB';
 
     error_reporting(E_ERROR | E_PARSE);
 
@@ -530,10 +530,10 @@ mysqli_close($conn);
 <?php
 
 
-    $DBServer = 'localhost';
-    $DBUser   = 'WebwinkelF4';
-    $DBPass   = 'groepf4';
-    $DBName   = 'webwinkel-DB';
+    $DBServer = '';
+    $DBUser   = '';
+    $DBPass   = '';
+    $DBName   = '-DB';
 
     error_reporting(E_ERROR | E_PARSE);
 

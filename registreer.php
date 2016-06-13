@@ -11,7 +11,7 @@ include ('includes/header.html');
 // Stap 1: maak verbinding met MySQL.
 // Zorg ervoor dat MySQL (via XAMPP) gestart is.
 //
-$conn = mysqli_connect('localhost', 'WebwinkelF4', 'groepf4', 'webwinkel-DB');
+$conn = mysqli_connect('', '', '', '-DB');
  
 // check connection
 if (mysqli_connect_errno()) {
@@ -63,7 +63,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' &&
 	if ( count($aErrors) == 0 ) 
 	{
 		// Gebruiker in database registreren.
-		$conn = mysqli_connect('localhost', 'WebwinkelF4', 'groepf4', 'webwinkel-DB');
+		$conn = mysqli_connect('', '', '', '-DB');
 		if (mysqli_connect_errno()) {
 			printf("Connect failed: %s\n", mysqli_connect_error());
 		}
